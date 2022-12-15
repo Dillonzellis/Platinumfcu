@@ -27,11 +27,11 @@
   //   }
   // }
   
-  // .flex-col{
-  //   display: flex;
-  //   gap: var(--gap, 1rem);
-  //   flex-direction: column;
-  // }
+  .flex-col{
+    display: flex;
+    gap: var(--gap, 1rem);
+    flex-direction: column;
+  }
 
   // .flex-col-max-sm{
   //   @include breakpoint-down(sm){
@@ -116,9 +116,9 @@
   // }
   
 
-  // .gap-0{
-  //   gap: 0;
-  // }
+  .gap-0{
+    gap: 0;
+  }
 
   // .gap-200{
   //   gap: 0.5rem;

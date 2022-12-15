@@ -16,7 +16,7 @@
    --fs-625: #{f.rem(32)};
    --fs-650: #{f.rem(30)};
    // --fs-675: #{f.rem(24)};
-   --fs-700: #{f.rem(24)};
+   --fs-700: #{f.rem(30)};
 
    @include breakpoint(md) {
       // --fs-600: #{f.rem(32)};

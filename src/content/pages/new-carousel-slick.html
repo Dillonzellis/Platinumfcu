@@ -1,0 +1,86 @@
+<html>
+
+<head>
+    <title>My Now Amazing Webpage</title>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
+    <!-- <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
+
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" type="text/css">
+
+    <link rel="stylesheet" href="/dist/main.css">
+
+
+</head>
+
+<body>
+
+    <section class="carousel-de">
+        <div class="container__wide">
+            <div class="slider-de">
+
+                <div class="slide">
+                    <img class="m-inline-auto" src="/src/imgs/Khusyali CD Special-sm.jpg" alt="" srcset="">
+                </div>
+
+                <div class="slide">
+                    <img class="m-inline-auto" src="/src/imgs/KhusyaliCD-bg.png" alt="" srcset="">
+                    <div class="slide__content | center-content text-center flex-col">
+                        <h1 style="font-family: Neumond, sans-serif;color: #006634; font-weight:bold;" class="fs-700">
+                            Khusyali
+                            Certificate <br>of Deposit Special</h1>
+                        <div style="font-family: Timonium, sans-serif; font-weight: 500; color: #006634" class="fs-500">
+                            Limited time CD Specials, just in time for December!
+                        </div>
+
+                        <div class="flex-col gap-0" style="font-family: Timonium, sans-serif; color: #c21823;">
+                            <div>Rates as high as</div>
+                            <div class="fs-600 fw-bold">3.03% APY*</div>
+                            <div>for 13 months</div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="slide">
+                    <img class="m-inline-auto" src="/src/imgs/loanSep22-bg.png" alt="" srcset="">
+                    <div class="slide__content | right-content flex-col">
+                        <h2 class="fs-700" style="font-family: abril-titling, serif; color: #f8d119;">
+                            Make your money go the distance.
+                        </h2>
+                        <div style="font-family: 'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica, Arial, 'sans-serif'; color: white">
+                            Retirement & income strategies Investment analysis & portfolio allocation Wealth transfer & estate planning strategies
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+    <div class="space" style="min-height: 800px;"></div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+
+    <script>
+        jQuery(document).ready(function () {
+            jQuery('.slider-de').slick({
+                dots: false,
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 5000,
+                //                    arrows: true,
+                prevArrow: "<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+                nextArrow: "<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>"
+            });
+        });
+    </script>
+</body>
+
+</html>

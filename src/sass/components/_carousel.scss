@@ -1,152 +1,63 @@
-@use '/src/sass/abstracts/' as *;
-@use '/src/sass/base/' as *;
+@use '/src/sass/abstracts/'as *;
+@use '/src/sass/base/'as *;
 
 
-// .slide {
-//     display: flex !important;
-//     flex-direction: column;
+.slide {
+    position: relative;
 
-//     @include breakpoint(lg) {
-//         flex-direction: row;
+    &__content {
+    }
 
-//         img {
-//             width: 60vw
-//         }
+    .center-content{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
-//         .slide__content-header {
-//             font-size: 2rem;
-//         }
-//     }
+    .right-content{
+        position: absolute;
+        top: 50%;
+        left: 70%;
+        transform: translate(-70%, -50%);
+    }
+}
 
-//     .slide__content-wrapper {
-//         font-family: $ff-primary;
-//         font-weight: bold;
-//         display: flex;
-
-//         .slide__content {
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: center;
-//             padding: 2rem;
-//             gap: 1rem;
-
-//             height: 250px;
-
-//             @include breakpoint(lg) {
-//                 padding: 2rem 4rem;
-//                 height: unset;
-//             }
-
-//             &-header {
-//                 font-weight: bold;
-//                 font-size: 1.5rem;
-//                 line-height: 1.125;
-
-//                 @include breakpoint(lg) {
-//                     font-size: 2rem;
-//                 }
-
-//                 @include breakpoint(xxl) {
-//                     font-size: 4rem;
-//                 }
-//             }
-
-//             &-body {
-//                 font-size: 1.25rem;
-//                 margin-bottom: 1rem;
-
-//                 @include breakpoint(lg) {
-//                     font-size: 1.5rem;
-//                 }
-
-//                 @include breakpoint(xxl) {
-//                     margin-bottom: 2.75rem;
-//                 }
-//             }
-
-//             .slide__content-btn {
-//                 padding: 0.5em 1em;
-//                 display: inline-flex;
-//                 background-color: #fff;
-//                 cursor: pointer;
-
-//                 font-size: 1.25rem;
-//                 font-weight: bold;
-//                 border-radius: 3px;
-
-//                 transform: scale(1);
-//                 transition: transform 200ms ease;
-
-//                 &:hover,
-//                 &:focus {
-//                     transform: scale(1.05) translateY(-.125em);
-
-//                     &::before {
-//                         opacity: .3;
-//                     }
-//                 }
-
-//                 @include breakpoint(lg) {
-//                     font-size: 1.5rem;
-//                 }
-
-//                 a {
-//                     color: #000000 !important;
-//                 }
-//             }
-//         }
-//     }
-
-//     .slide-light {
-//         background-color: $clr-accent-400;
-//     }
-
-//     .slide-dark {
-//         background-color: $clr-primary-400;
-//     }
-// }
-
-// .slick-slide {
-//     height: unset;
-// }
+.slick-slide {
+    height: unset;
+}
 
 
-// .slick-prev:before, .slick-next:before {
-//     font-size: 30px;
-// }
+.slick-prev:before,
+.slick-next:before {
+    font-size: 30px;
+}
 
-// .slick-prev:before{
-//     content: "<";
-// }
-
-// ​ .slick-next:before {
-//     content: ">";
-// }
 // .slick-dots {
 //     display: none;
 // }
 
 
-// .slick-arrow {
-//     display: none !important;
-//     position: absolute;
-//     top: 50%;
+.slick-arrow {
+    display: none !important;
+    position: absolute;
+    top: 50%;
 
-//     background: transparent;
-//     color: white;
-//     border: none;
+    background: transparent;
+    color: black;
+    border: none;
 
-//     @include breakpoint(lg) {
-//         font-size: 6rem;
-//         display: unset !important;
-//     }
-// }
+    @include breakpoint(lg) {
+        font-size: 6rem;
+        display: unset !important;
+    }
+}
 
-// .slick-next {
-//     right: 2%;
-// }
+.slick-next {
+    right: 2%;
+}
 
-// .slick-prev {
-//     left: 2%;
-//     z-index: 999;
-// }
+.slick-prev {
+    left: 2%;
+    z-index: 999;
+}
