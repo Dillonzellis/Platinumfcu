@@ -1,5 +1,5 @@
-@use '/src/sass/abstracts/' as *;
-@use '/src/sass/base/' as *;
+@use '/src/sass/abstracts/'as *;
+@use '/src/sass/base/'as *;
 
 
 .slide {
@@ -73,5 +73,27 @@
 
     &:hover {
         background-color: hsl(0, 0%, 0%);
+    }
+}
+
+.money-distance {
+    .right-content {
+        top: 0;
+        left: 65%;
+        right: 2%;
+        text-align: center;
+        line-height: 1.1;
+        gap: 0;
+
+        @include breakpoint(xl){
+            gap: 1rem;
+            top: 5%;
+        }
+
+        @include breakpoint(xxl){
+            gap: 1.5rem;
+            top: 10%;
+        }
+  
     }
 }
