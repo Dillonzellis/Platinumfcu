@@ -1,5 +1,5 @@
-@use '/src/sass/base/'as *;
-@use '/src/sass/abstracts/'as *;
+@use '/src/sass/base/' as *;
+@use '/src/sass/abstracts/' as *;
 
 // Font Sizes
 
@@ -11,9 +11,9 @@
 //   font-size: $fs-450;
 // }
 
-// .fs-450 {
-//   font-size: $fs-450;
-// }
+.fs-450 {
+  font-size: $fs-450;
+}
 
 // .fs-475 {
 //   font-size: $fs-475;
@@ -69,7 +69,7 @@
 
 // Font Family
 
-.ff-primary{
+.ff-primary {
   font-family: $ff-primary;
 }
 
@@ -107,3 +107,11 @@
 //         color: $clr-accent-400;
 //     }
 // }
+
+.fz-700 {
+  font-size: clamp(1.5rem, 1rem + 2vw, 4rem);
+}
+
+.fz-500 {
+  font-size: clamp(1rem, 1rem + 1.5vw, 2.5rem);
+}
